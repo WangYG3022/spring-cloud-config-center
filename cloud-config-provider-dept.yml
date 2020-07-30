@@ -63,4 +63,4 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: dept-test-8001
-    prefer-ip-address: true﻿
+    prefer-ip-address: true
