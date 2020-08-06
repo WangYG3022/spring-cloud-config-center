@@ -26,7 +26,7 @@ eureka:
       defaultZone: http://eureka.com:7001/eureka/
 ---
 server:
-  port: 8203
+  port: 8204
 spring:
   profiles: prod
   application:
