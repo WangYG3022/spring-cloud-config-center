@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: ms-cloud-config-client-dev
+    name: cloud-config-client-dev
 eureka:
   client:
     service-url:
@@ -19,7 +19,18 @@ server:
 spring:
   profiles: test
   application:
-    name: ms-cloud-config-client-test
+    name: cloud-config-client-test
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-test.com:7001/eureka/
+---
+server:
+  port: 8203
+spring:
+  profiles: prod
+  application:
+    name: cloud-config-client-prod
 eureka:
   client:
     service-url:
