@@ -13,6 +13,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka.com:7001/eureka/
+config:
+  info: version=dev-1
 ---
 server:
   port: 8202
@@ -24,9 +26,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka.com:7001/eureka/
+config:
+  info: version=test-1
 ---
 server:
-  port: 8204
+  port: 8203
 spring:
   profiles: prod
   application:
@@ -35,3 +39,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka.com:7001/eureka/
+config:
+  info: version=prod-1
